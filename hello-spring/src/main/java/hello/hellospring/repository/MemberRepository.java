@@ -3,7 +3,10 @@ package hello.hellospring.repository;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.context.annotation.Primary;
+
 import hello.hellospring.domain.Member;
+
 
 public interface MemberRepository {
 	

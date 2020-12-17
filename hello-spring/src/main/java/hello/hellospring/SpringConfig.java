@@ -10,6 +10,7 @@ import hello.hellospring.service.MemberService;
 @Configuration
 public class SpringConfig {
 	private final MemberRepository memberRepository;
+	
 	public SpringConfig(MemberRepository memberRepository) {
 		this.memberRepository = memberRepository;
 	}
@@ -19,8 +20,8 @@ public class SpringConfig {
 		return new MemberService(memberRepository);
 	}
 	
-	@Bean
-	public TimeTraceAop timeTraceAop() {
-		return new TimeTraceAop();
- }
+//	@Bean
+//	public TimeTraceAop timeTraceAop() {
+//		return new TimeTraceAop();
+// }
 }

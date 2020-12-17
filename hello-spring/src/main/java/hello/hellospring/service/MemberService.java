@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 
-@Transactional
+//@Transactional
 @Service
 public class MemberService {
 
